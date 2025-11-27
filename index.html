@@ -409,87 +409,87 @@
                 const results = [
                     // Stage 0
                     [
-                        { stress: 0, energy: -10, message: "힘들지만 상쾌하게 하루를 시작했습니다!" },
-                        { stress: -5, energy: 0, message: "5분의 여유가 마음을 편하게 해줍니다." },
-                        { stress: 15, energy: 10, message: "늦잠을 잤습니다... 출근이 걱정됩니다." }
+                        { stress: 0, energy: -10, message: "힘들지만 상쾌하게 하루를 시작했습니다!\n(에너지 -10)" },
+                        { stress: -5, energy: 0, message: "5분의 여유가 마음을 편하게 해줍니다.\n(스트레스 -5)" },
+                        { stress: 15, energy: 10, message: "늦잠을 잤습니다... 출근이 걱정됩니다.\n(스트레스 +15, 에너지 -10)" }
                     ],
                     // Stage 1
                     [
-                        { stress: -5, energy: -5, message: "긍정적인 마음이 하루를 밝게 만듭니다!" },
-                        { stress: 0, energy: 0, message: "평범한 하루를 시작합니다." },
-                        { stress: 10, energy: 0, message: "부정적인 생각이 마음을 무겁게 합니다..." }
+                        { stress: -5, energy: -5, message: "긍정적인 마음이 하루를 밝게 만듭니다!\n(스트레스 -5, 에너지 -5)" },
+                        { stress: 0, energy: 0, message: "평범한 하루를 시작합니다.\n(아무변화도 일어나지 않았습니다)" },
+                        { stress: 10, energy: 0, message: "부정적인 생각이 마음을 무겁게 합니다...\n(스트레스 +10)" }
                     ],
                     // Stage 2
                     [
-                        { stress: 0, energy: 15, message: "든든한 식사가 하루를 시작할 힘을 줍니다!" },
-                        { stress: 0, energy: 5, message: "간단하게 요기했습니다." },
-                        { stress: 10, energy: -10, message: "공복에 몸도 마음도 힘듭니다..." }
+                        { stress: 0, energy: 15, message: "든든한 식사가 하루를 시작할 힘을 줍니다!\n(에너지 +15)" },
+                        { stress: 0, energy: 5, message: "간단하게 요기했습니다.\n(에너지 +5)" },
+                        { stress: 10, energy: -10, message: "공복에 몸도 마음도 힘듭니다...\n(스트레스 +10 에너지 -10)" }
                     ],
                     // Stage 3
                     [
-                        { stress: -5, energy: 0, message: "좋아하는 음악이 기분을 좋게 해줍니다." },
-                        { stress: 0, energy: 0, message: "나는 돌입니다." },
-                        { stress: 15, energy: -5, message: "힘든 출근길에 심신이 지쳐갑니다" }
+                        { stress: -5, energy: 0, message: "좋아하는 음악이 기분을 좋게 해줍니다.\n(스트레스 -5)" },
+                        { stress: 0, energy: 0, message: "나는 돌입니다.\n(아무변화도 일어나지 않았습니다)" },
+                        { stress: 15, energy: -5, message: "힘든 출근길에 심신이 지쳐갑니다\n(스트레스 +15, 에너지 -5)" }
                     ],
                     // Stage 4
                     [
-                        { stress: 10, energy: -10, message: "업무는 처리했지만 힘듭니다..." },
-                        { stress: 5, energy: 0, message: "합리적인 대응이었습니다!" },
-                        { stress: 5, energy: -10, message: "체력은 떨어지나 마음은 가볍습니다" }
+                        { stress: 10, energy: -10, message: "업무는 처리했지만 힘듭니다...\n(스트레스 +10 에너지 -10)" },
+                        { stress: 5, energy: 0, message: "합리적인 대응이었습니다!\n(스트레스 +5)" },
+                        { stress: 5, energy: -10, message: "체력은 떨어지나 마음은 가볍습니다\n(스트레스 +5 에너지 -10)" }
                     ],
                     // Stage 5
                     [
-                        { stress: -10, energy: 0, message: "동료와의 대화가 기분을 좋게 해줍니다." },
-                        { stress: -15, energy: 5, message: "잠깐의 화캉스가 몸과 마음을 가볍게 해줍니다!" },
-                        { stress: 5, energy: -10, message: "쉬지 않고 일하니 피곤합니다..." }
+                        { stress: -10, energy: 0, message: "동료와의 대화가 기분을 좋게 해줍니다.\n(스트레스 -10)" },
+                        { stress: -15, energy: 5, message: "잠깐의 화캉스가 몸과 마음을 가볍게 해줍니다!\n(스트레스 -15 에너지 +5)" },
+                        { stress: 5, energy: -10, message: "쉬지 않고 일하니 피곤합니다...\n(스트레스 +5 에너지 -10)" }
                     ],
                     // Stage 6
                     [
-                        { stress: -10, energy: 5, message: "동료와의 식사가 즐겁습니다." },
-                        { stress: -5, energy: 5, message: "조용한 시간이 재충전에 도움이 됩니다." },
-                        { stress: 10, energy: -15, message: "몸이 힘들고 마음도 지칩니다." }
+                        { stress: -10, energy: 5, message: "동료와의 식사가 즐겁습니다.\n(스트레스 -10 에너지 +5)" },
+                        { stress: -5, energy: 5, message: "조용한 시간이 재충전에 도움이 됩니다.\n(스트레스 -5 에너지 -5)" },
+                        { stress: 10, energy: -15, message: "몸이 힘들고 마음도 지칩니다.\n(스트레스 +10 에너지 -15)" }
                     ],
                     // Stage 7
                     [
-                        { stress: -5, energy: 0, message: "적당히 보고 일로 복귀했습니다." },
-                        { stress: 10, energy: -5, message: "상사에게 들켜버렸습니다." },
-                        { stress: 20, energy: 0, message: "남들과 비교하니 우울해집니다..." }
+                        { stress: -5, energy: 0, message: "적당히 보고 일로 복귀했습니다.\n(스트레스 -5)" },
+                        { stress: 10, energy: -5, message: "상사에게 들켜버렸습니다.\n(스트레스 +10 에너지 -5)" },
+                        { stress: 20, energy: 0, message: "남들과 비교하니 우울해집니다...\n(스트레스 +20)" }
                     ],
                     // Stage 8
                     [
-                        { stress: -10, energy: 0, message: "동료의 도움으로 문제를 해결했습니다!" },
-                        { stress: 10, energy: -10, message: "혼자 끙끙댔으나 잘 풀리지 않아 스트레스만 받습니다." },
-                        { stress: 5, energy: -15, message: "약간 체력이 떨어졌지만 마음은 후련합니다" }
+                        { stress: -10, energy: 0, message: "동료의 도움으로 문제를 해결했습니다!\n(스트레스 -10)" },
+                        { stress: 10, energy: -10, message: "혼자 끙끙댔으나 잘 풀리지 않아 스트레스만 받습니다.\n(스트레스 +10 에너지 -10)" },
+                        { stress: 5, energy: -15, message: "약간 체력이 떨어졌지만 마음은 후련합니다\n(스트레스 +5 에너지 -15)" }
                     ],
                     // Stage 9
                     [
-                        { stress: -10, energy: -10, message: "정시 퇴근! 기분이 좋습니다." },
-                        { stress: 5, energy: -15, message: "일은 끝났지만 조금 피곤합니다." },
-                        { stress: 20, energy: -20, message: "야근으로 몸과 마음이 지쳐갑니다..." }
+                        { stress: -10, energy: -10, message: "정시 퇴근! 기분이 좋습니다.\n(스트레스 -10 에너지 -10)" },
+                        { stress: 5, energy: -15, message: "일은 끝났지만 조금 피곤합니다.\n(스트레스 +5 에너지 -15)" },
+                        { stress: 20, energy: -20, message: "야근으로 몸과 마음이 지쳐갑니다...\n(스트레스 +20 에너지 -20)" }
                     ],
                     // Stage 10
                     [
-                        { stress: -20, energy: -20, message: "운동으로 스트레스가 풀립니다!" },
-                        { stress: -25, energy: -15, message: "친구와의 시간이 힐링이 됩니다!" },
-                        { stress: -10, energy: 15, message: "집에서 편히 쉬니 피로가 풀립니다." }
+                        { stress: -20, energy: -20, message: "운동으로 스트레스가 풀립니다!\n(스트레스 -20 에너지 -20)" },
+                        { stress: -25, energy: -15, message: "친구와의 시간이 힐링이 됩니다!\n(스트레스 -25 에너지 -15)" },
+                        { stress: -10, energy: 15, message: "집에서 편히 쉬니 피로가 풀립니다.\n(스트레스 -10 에너지 +15)" }
                     ],
                     // Stage 11
                     [
-                        { stress: -5, energy: 10, message: "건강한 식사로 몸이 가벼워집니다." },
-                        { stress: -10, energy: 5, message: "역시 맛있다...! 맛있게 먹었습니다." },
-                        { stress: 10, energy: 3, message: "허기는 채웠지만 건강이 걱정됩니다..." }
+                        { stress: -5, energy: 10, message: "건강한 식사로 몸이 가벼워집니다.\n(스트레스 -5 에너지+10)" },
+                        { stress: -10, energy: 5, message: "역시 맛있다...! 맛있게 먹었습니다.\n(스트레스 -10 에너지 +5)" },
+                        { stress: 10, energy: 3, message: "허기는 채웠지만 건강이 걱정됩니다...\n(스트레스 +10 에너지 +3)" }
                     ],
                     // Stage 12
                     [
-                        { stress: -10, energy: -10, message: "자기계발로 뿌듯한 시간을 보냈습니다!" },
-                        { stress: -15, energy: 0, message: "여유로운 시간이 마음을 편하게 해줍니다." },
-                        { stress: 10, energy: -10, message: "시간만 흘러가고 피곤해집니다..." }
+                        { stress: -10, energy: -10, message: "자기계발로 뿌듯한 시간을 보냈습니다!\n(스트레스 -10 에너지 -10)" },
+                        { stress: -15, energy: 0, message: "여유로운 시간이 마음을 편하게 해줍니다.\n(스트레스 -15)" },
+                        { stress: 10, energy: -10, message: "시간만 흘러가고 피곤해집니다...\n(스트레스 10 에너지 -10)" }
                     ],
                     // Stage 13
                     [
-                        { stress: -10, energy: 5, message: "따뜻한 샤워로 몸과 마음이 편안해집니다." },
-                        { stress: -8, energy: 8, message: "스트레칭으로 긴장이 풀립니다." },
-                        { stress: 10, energy: -5, message: "핸드폰 불빛이 잠을 방해합니다..." }
+                        { stress: -10, energy: 5, message: "따뜻한 샤워로 몸과 마음이 편안해집니다.\n(스트레스 -10 에너지+5)" },
+                        { stress: -8, energy: 8, message: "스트레칭으로 긴장이 풀립니다.\n(스트레스 -8 에너지 +8)" },
+                        { stress: 10, energy: -5, message: "핸드폰 불빛이 잠을 방해합니다...\n(스트레스 +10 에너지 -5)" }
                     ]
                 ];
                 
@@ -558,3 +558,4 @@
     </script>
 </body>
 </html>
+
